@@ -13,10 +13,12 @@
   
   :root {
       --color-primary: #FE4C02;
+      --orange-light: #FE6A2C;
       --color-black: #1A1A1A;
       --color-white: #ffffff;
       --color-offwhite: #EBEAEA;
       --color-grey-dark: #808080;
+      --color-grey-black: #404040;
       --text-color: #F9F9F9;
       --color-backgrond_black: #252525;
       --color-background: #FCFCFC;
@@ -101,7 +103,6 @@
     cursor: pointer;
   }
   
-  /* Dark mode styles */
   .dark-mode {
     --color-black: #FFFFFF;
     --color-white: #1A1A1A;
@@ -114,7 +115,7 @@
     background: url("../images/image\ 4.svg") right 5% no-repeat, url("../images/image\ 5.svg") 0% -25% no-repeat, url("../images/image\ 3.svg") left bottom no-repeat;
   }
 
-  .hero-section section {
+  .hero-section_section {
     max-width: 800px;
    margin: 50px auto;
    display: flex;
@@ -122,7 +123,7 @@
    gap: 20px;
   }
 
-  .hero-section section h1 {
+  .hero-section_section h1 {
     color: var(--color-black);
     font-weight: var(--font-weight-bold);
     font-size: 3em;
@@ -130,18 +131,18 @@
     
   }
 
-  .hero-section section h1 span {
+  .hero-section_section h1 span {
     color: var(--color-primary);
   }
 
-  .hero-section section p {
+  .hero-section_section p {
     text-align: center;
     color: var(--color-grey-dark);
     font-weight: 500;
     font-size: 16px;
   }
 
-  .hero-section section a {
+  .hero-section_section a {
     background-color: var(--color-primary);
     padding: 16px 24px;
     border-radius: 16px;
@@ -153,7 +154,7 @@
     margin-top: 5%;
   }
 
-  .hero-section section img {
+  .hero-section_img {
     margin-top: 70px;
   }
 
@@ -393,9 +394,10 @@
     background-color: var(--color-primary);
     display: flex;
     flex-direction: row;
-    gap: 47px;
+    gap: 40px;
     align-items: center;
     padding: 60px;
+    margin-top: 10px;
   }
 
   .footer_logo {
@@ -407,13 +409,14 @@
   .footer section {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 20px;
   }
 
   .footer_nav {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    max-width: 150px;
   }
 
   .footer h6 {
@@ -463,4 +466,243 @@
     background-color: var(--color-white);
     border-radius: 50%;
     text-align: center;
+  }
+
+
+  /* END OF INDEX PAGE */
+  /* START OF ABOUT PAGE */
+  .abouthero-section {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin: 50px auto;
+    margin-bottom: 150px;
+    max-width: 1000px;
+    align-items: center;
+    margin-left: -100px;
+  }
+
+  .abouthero-section img {
+    width: 520px;
+    height: 693px;
+  }
+
+  .abouthero-section div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 796px;
+  }
+
+  .abouthero-section h1 {
+    text-align: left;
+  }
+
+  .abouthero-section p {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .howToEarn {
+    background: url('../images/image\ 4.svg') no-repeat right bottom;
+  }
+
+	.howToEarn section {
+    margin: -80px auto 80px;
+    max-width: 1150px;
+  }
+
+  .howToEarn h2 {
+    font-size: 40px;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-black);
+  }
+
+  .howToEarn_p {
+    font-size: var(--font-size-large);
+    font-weight: 500;
+    color: var(--color-grey-dark);
+  }
+
+  .aboutcard_container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 40px;
+    margin-top: 50px;
+    border-radius: 8px;
+    padding: 20px;
+  }
+
+  .about_card h6 {
+    color: var(--color-black);
+    font-size: 20px;
+    font-weight: var(--font-weight-bold);
+  }
+
+  .about_card p {
+    color: var(--color-grey-dark);
+    font-weight: 500;
+  }
+
+  .about_card span {
+    color: var(--color-primary);
+  }
+
+  .about_final_section section {
+    margin: 0px auto 50px;
+    max-width: 1100px;
+  }
+
+  .about_final_section h3 {
+    font-size: 40px;
+    color: var(--color-black);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 20px;
+  }
+
+  .about_final_section p {
+    font-size: 20px;
+    color: var(--color-grey-dark);
+    font-weight: 500;
+    margin-bottom: 50px;
+  }
+
+  .aboutdiv_card {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5%;
+  }
+
+  /* END OF ABOUT PAGE */
+  /* START OF MARKET PAGE */
+
+  .market_header {
+    max-width: 700px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .market_header h1 {
+    color: var(--color-black);
+    font-weight: var(--font-weight-bold);
+    font-size: 3em;
+    text-align: center;
+    
+  }
+
+  .market_header h1 span {
+    color: var(--color-primary);
+  }
+
+  .marketHeader_search {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .marketHeader_search button {
+    cursor: pointer;
+    background-color: var(--color-primary);
+    border-radius: 0px 8px 8px 0px;
+    padding: 12px 16px;
+    color: var(--color-white);
+    border: none;
+  }
+
+  .search-container {
+    position: relative;
+    grid-area: searchArea;
+  }
+  
+  .search-input {
+    padding: 11px 30px;
+    border-radius: 6px;
+    border: 1px solid rgba(229, 229, 229, 0.50);
+    width: 450px;
+    border-right: none;
+  }
+  
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/search.svg");
+    background-size: cover;
+  }
+
+  .MarketSearch_suggestions {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 20px;
+  }
+
+  .market_goods {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 7%;
+    margin: 80px;
+  }
+
+  .market_goods article {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: flex-start;
+  }
+
+  .market_goods h2 {
+    color: var(--color-black);
+    font-size: 28px;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 10px;
+  }
+
+  .market_goods h4 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color-grey-black);
+    margin-bottom: 10px;
+  }
+
+  .market_goods h3 {
+    color: var(--color-primary);
+    font-size: 28px;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 10px;
+  }
+
+  .market_viewMore a {
+    color: var(--orange-light);
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 50px;
+  }
+
+  .market_goods p {
+    font-size: 20px;
+    font-weight: var(--font-weight-semibold);
+  }
+
+  .market_socials {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+
+  .market_img {
+    width: 250px;
+    height: auto;
+  }
+
+  .market_main {
+    margin-bottom: 300px;
+    background: url('../images/image\ 5.svg') left -15% no-repeat, url('../images/image\ 4.svg') right -10% no-repeat;
   }
