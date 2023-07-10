@@ -706,3 +706,417 @@
     margin-bottom: 300px;
     background: url('../images/image\ 5.svg') left -15% no-repeat, url('../images/image\ 4.svg') right -10% no-repeat;
   }
+
+  /* END OF MARKET PAGE */
+  /* START OF TICKnEARN */
+  .ticknearn_main {
+    background: url('../images/image\ 5.svg') left -8% no-repeat, url('../images/image\ 4.svg') right 23% no-repeat;
+  }
+
+  .ticknearn_header {
+    display: flex;
+    flex-direction: row;
+    max-width: 1150px;
+    margin: 50px auto;
+  }
+
+  .ticknearn_header img {
+    width: 650px;
+    height: auto;
+    align-self: flex-end;
+    margin-left: -100px;
+  }
+
+  .ticknearn_header_contents{
+    width: 700px;
+    margin-bottom: 120px;
+  }
+
+  .ticknearn_header h1 {
+    font-size: 3em;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+    margin-bottom: 20px;
+  }
+
+  .ticknearn_header_p {
+    color: var(--color-grey-dark);
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 100px;
+  }
+
+  .ticknearn_header_p span {
+    color: var(--color-primary);
+  }
+
+  .ticknearn_number {
+    color: var(--color-white);
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    padding: 12px 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+  }
+
+  .ticknearn_text {
+    font-size: 20px;
+    font-weight: var(--font-weight-bold);
+  }
+
+  .ticknearn_text span {
+    color: var(--color-primary);
+  }
+
+  .ticknearn_tasks {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .ticknearn_line {
+    height: 15px;
+    margin: 2px 0px 7px 30px;
+    background-color: var(--color-primary);
+    width: 5px;
+  }
+
+  .ticknearn_posts {
+    margin: 50px 100px 0px;
+  }
+
+  .ticknearn_posts h2 {
+    color: var(--color-black);
+    font-size: 30px;
+    font-weight: var(--font-weight-bold);
+    margin: 50px 0px;
+  }
+
+  .ticknearn_posts section {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-bottom: 100px;
+  }
+
+  .ticknearn_button {
+    background-color: var(--color-primary);
+    font-size: 20px;
+    font-weight: var(--font-weight-semibold);
+    border-radius: 16px;
+    padding: 14px 22px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--color-white);
+  }
+
+  .ticknearn_posts h3 {
+    color: var(--color-black);
+    margin-top: 20px;
+    font-weight: var(--font-weight-bold);
+    font-size: 26px;
+  }
+
+  .ticknearn_posts div {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .ticknearn_posts h4 {
+    display: flex;
+    flex-direction: row;
+    gap: 11px;
+    align-items: center;
+  }
+
+  .ticknearn_posts h5 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color-grey-dark);
+  }
+
+  .ticknearn_posts p {
+    color: var(--color-grey-dark);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    width: 600px;
+  }
+
+  .ticknearn_readMore {
+    text-decoration: underline;
+    font-size: 18px;
+    color: var(--color-primary);
+    font-weight: var(--font-weight-semibold);
+  }
+
+  /* END TICKNEARN PAGE */
+
+  /* START TICKNEARN1 PAGE */
+  .ticknearn_header-p {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-grey-dark);
+    margin: 20px 0px 100px;
+  }
+
+  .ticknearn_header-p span {
+    color: var(--color-primary);
+  }
+
+  .ticknearn_head {
+    background-color: var(--color-grey-dark);
+    padding: 12px 20px;
+    border-radius: 16px;
+    font-size: 20px;
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-white);
+    width: 170px;
+    height: auto;
+  }
+
+  .ticknearn1_header {
+    max-width: 1050px;
+    margin: 0px auto 50px;
+  }
+
+  .ticknearn1_img {
+    width: 1050px;
+    height: auto;
+    margin-bottom: 50px;
+  }
+
+  .ticknearn_header_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .ticknearn_header_div h1 {
+    color: var(--color-black);
+    font-size: 26px;
+    font-weight: var(--font-weight-bold);
+    margin-top: 20px;
+  }
+
+  .ticknearn_header_div div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .ticknearn_header_div h4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    font-size: 22px;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-black);
+  }
+
+  .ticknearn_header_div h5 {
+    color: var(--color-grey-dark);
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .ticknearn1_paragragh {
+    color: 20px;
+    font-weight: 500;
+    color: var(--color-grey-dark);
+    margin-bottom: 50px;
+    width: 800px;
+  }
+
+  .ticknearn1_header a{
+    border-radius: 16px;
+    background-color: var(--color-primary);
+    padding: 12px 22px;
+    color: var(--color-white);
+    font-size: 20px;
+  }
+
+  .ticknearn1_mainContents {
+    max-width: 1050px;
+    margin: 80px auto 50px;
+  }
+
+  .ticknearn1_mainContents section {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+  }
+
+  .ticknearn1_mainContents h2 {
+    font-size: 30px;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-black);
+  }
+
+  .ticknearn1_mainContents article {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 50px;
+  }
+
+  .ticknearn1_previousPost_img {
+    width: 150px;
+    height: auto;
+  }
+
+  .ticknearn1_previousPost h3 {
+    font-size: 20px;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-black);
+  }
+
+  .ticknearn1_previousPost div {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .ticknearn1_previousPost h4 {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-size: 17px;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-black);
+    align-items: center;
+  }
+
+  .ticknearn1_previousPost h5 {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--color-grey-dark);
+  }
+
+  /* END OF TICKNPOST1 */
+  /* START OF COUPON */
+  .coupon_main_bg {
+    background: url('../images/image\ 3.svg') -5% 25% no-repeat;
+  }
+
+  .coupon_main {
+    max-width: 1200px;
+    margin: 0px auto;
+  }
+
+  .coupon_mainH1 {
+    text-align: center;
+    width: 600px;
+    font-weight: var(--font-weight-bold);
+    font-size: 30px;
+    color: var(--color-black);
+    margin: 0px auto;
+  }
+
+  .coupon_main section {
+    margin: 100px 0px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+  }
+
+  .coupon_main article {
+    border-radius: 8px;
+    border: 0.5px solid var(--color-primary);
+    box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.16);
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    width: 380px;
+    background-color: var(--color-white);
+    align-items: center;
+  }
+
+  .coupon_main_div {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .coupon_main_div h2 {
+    color: var(--color-primary);
+    font-size: 20px;
+    font-weight: var(--font-weight-bold);
+  }
+
+  .coupon_main_div p {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-primary);
+    margin-top: 5px;
+  }
+
+  .coupon_main_gif {
+    width: 83px;
+    height: auto;
+  }
+
+  /* END COUPON PAGE */
+  /* START LEADERBOARD PAGE */
+
+  .leaderboard_h1 span {
+    color: var(--color-primary);
+  }
+
+  .leaderboard_h1 {
+    margin-top: 100px;
+  }
+
+  .leaderboard_main_div {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .leaderboard_main_div h2 {
+    color: var(--color-black);
+    font-size: 20px;
+    font-weight: var(--font-weight-bold);
+  }
+
+  .leaderboard_main_div h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-primary);
+    margin-top: 5px;
+  }
+
+  .leaderboard_numbers {
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    color: var(--color-white);
+    font-size: 36px;
+    font-weight: var(--font-weight-bold);
+    display: flex;
+    width: 68px;
+    height: 67px;
+    padding: 4px 14px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
