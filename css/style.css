@@ -649,10 +649,18 @@
   .aboutcard_container {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    gap: 40px;
+    gap: 20px;
     margin-top: 50px;
     border-radius: 8px;
+  }
+
+  .about_card {
     padding: 20px;
+    background-color: var(--color-white);
+  }
+
+  .about_card:hover {
+    box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.16);
   }
 
   .about_card h6 {
@@ -731,6 +739,10 @@
     padding: 12px 16px;
     color: var(--color-white);
     border: none;
+  }
+
+  .marketHeader_search button:hover {
+    opacity: 0.8;
   }
 
   .search-container {
@@ -941,6 +953,10 @@
     color: var(--color-white);
   }
 
+  .ticknearn_button:hover {
+    opacity: 0.8;
+  }
+
   .ticknearn_posts h3 {
     color: var(--color-black);
     margin-top: 20px;
@@ -1009,6 +1025,10 @@
     height: auto;
   }
 
+  .ticknearn_head:hover {
+    color: var(--color-primary);
+  }
+
   .ticknearn1_header {
     max-width: 1050px;
     margin: 0px auto 50px;
@@ -1072,6 +1092,10 @@
     padding: 12px 22px;
     color: var(--color-white);
     font-size: 20px;
+  }
+
+  .ticknearn1_header a:hover {
+    opacity: 0.8;
   }
 
   .ticknearn1_mainContents {
@@ -1308,6 +1332,10 @@
     font-weight: var(--font-weight-semibold);
   }
 
+  .supportForm_section button:hover {
+    opacity: 0.8;
+  }
+
   .support_joinCommunity {
     background: url('../images/image\ 5.svg') top -210px left -20px no-repeat, url('../images/image\ 4.svg') bottom -250px right -30px no-repeat;
     padding-bottom: 150px;
@@ -1354,6 +1382,10 @@
     justify-content: center;
   }
 
+  .support_joinCommunity_section a:hover {
+    opacity: 0.8;
+  }
+
   .support_footer{
     margin-top: -50px;
   }
@@ -1397,6 +1429,10 @@
     font-size: 18px;
     font-weight: var(--font-weight-semibold);
     margin-top: 36px;
+  }
+
+  .Verify_section button:hover {
+    opacity: 0.8;
   }
 
   .input-container {
