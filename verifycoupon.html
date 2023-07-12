@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="icon" type="image/svg" sizes="32x32" href="./images/logo.svg">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+	<title>WinForce</title>
+                
+</head>
+<body class="indexBody">
+	<nav class="indexnav">
+		<div class="indexnav_div">
+			<a href="index.html">
+				<img src="./images/logo.svg" >
+			</a>
+			<div class="indexnav_contents">
+				<ul>
+					<li>
+						<a class="nav_link" href="index.html">Home</a>
+					</li>
+					<li>
+						<a class="nav_link" href="about.html">About</a>
+					</li>
+					<li>
+						<a class="nav_link" href="market.html">Marketplace</a>
+					</li>
+					<li>
+						<a class="nav_link" href="ticknearn.html">Tick & Earn</a>
+					</li>
+					<li class="dropdown">
+						<a class="nav_link active dropdown-btn" href="coupon.html">Coupon Code &nbsp; v</a>
+						<div class="dropdown-content">
+							<a href="coupon.html">Buy Coupon Code</a>
+							<a href="verifycoupon.html">Verify Coupon Code</a>
+						</div>
+					</li>
+					<li>
+						<a class="nav_link" href="leaderboard.html">Leaderboard</a>
+					</li>
+					<li>
+						<a class="nav_link" href="support.html">Support</a>
+					</li>
+				</ul>
+				<div class="indexnav_btns">
+					<button class="indexnav_btn1">
+						<img src="./images/person.svg" > My Account
+					</button>
+					<button title="Change mode"  class="indexnav_btn2" id="mode-toggle"><img src="./images/Icons.svg" ></button>
+			</div>
+		</div>
+	</nav>
+	<main>
+        <section>
+            <p class="ticknearn_header-p">Coupon Code &nbsp; &gt; &nbsp; <span>Verify Coupon Code</span></p>
+            <section class="Verify_section">
+                <h1>Verify Your Coupon Code</h1>
+                <p class="verify_p">Copy and paste your coupon code here to confirm your code status</p>
+                <div class="input-container">
+                    <input type="text" placeholder="Paste code here...">
+                    <img src="./images/Icons_input.svg">
+                </div>
+                <button class="openBtn" data-popup-id="popup1">
+                    <img src="./images/Button.svg">
+                    Check Status
+                </button>
+                <div class="popup" id="popup1">
+                    <div class="popup-content">
+                        <div class="popup-header">
+                            <h3><span>Code:</span> Wel-8JK5-QNTH-HT4X</h3>
+                            <p class="closeBtn">X</p>
+                        </div>
+                        <div class="popup_div">
+                            <h4>Status:</h4>
+                            <h6>Used</h6>
+                        </div>
+                        <div class="popup_div">
+                            <h4>Date Used:</h4>
+                            <h5>30/06/2023</h5>
+                        </div>
+                        <div class="popup_div">
+                            <h4>Used by:</h4>
+                            <h5>Wealthtv</h5>
+                        </div>
+                        <div class="popup_div">
+                            <h4>Bonus received by:</h4>
+                            <h5>Buildmychoice</h5>
+                        </div>
+                    </div>
+                </div>          
+            </section>
+    </main>
+	<footer>
+		<section class="footer">
+			<div class="footer_logo">
+				<img src="./images/logo.svg">
+			</div>
+			<section>
+				<div class="footer_nav">
+					<h6>ABOUT</h6>
+					<a href="about.html">About Us</a>
+					<a href="#">Reviews</a>
+					<a href="#">Terms and Conditions</a>
+				</div>
+				<div class="footer_nav">
+					<h6>QUICK LINKS</h6>
+					<a href="#">Buy Code</a>
+					<a href="#">Verify Code</a>
+					<a href="#">Leaderboard</a>
+					<a href="#">Learn Post</a>
+				</div>
+				<div class="footer_nav">
+					<h6>SUPPORT</h6>
+					<a href="#">Privacy Policy</a>
+					<a href="#">Contact Us</a>
+				</div>
+				<div>
+					<h6>DOWNLOAD APP</h6>
+					<article>
+						<div class="footerdownload_btn">
+							<img src="./images/logos_google-play-icon.svg">
+							<div>
+								<p>Download on the</p>
+								<span>Google Play</span>
+							</div>
+						</div>
+						<div class="footerdownload_btn">
+							<img src="./images/file-icons_apple.svg">
+							<div>
+								<p>Download on the</p>
+								<span>App Store</span>
+							</div>
+						</div>
+					</article>
+					<h6>Join us on Socials</h6>
+					<article>
+						<a href="#">
+							<img src="./images/ic_baseline-tiktok.svg">
+						</a>
+						<a href="#">
+							<img src="./images/Facebbook Icon.svg">
+						</a>
+						<a href="#">
+							<img src="./images/teenyicons_telegram-solid.svg">
+						</a>
+						<a href="#">
+							<img src="./images/Instagram Icon.svg">
+						</a>
+					</article>
+				</div>
+			</section>
+		</section>
+		<p class="footer_copyright">@2023 WinForce.ng All rights Reserved </p>
+	</footer>
+
+	<script type="text/javascript" src="./js/script.js"></script>
+    <script>
+        class Popup {
+     constructor() {
+       this.popups = document.getElementsByClassName('popup');
+       this.openBtns = document.getElementsByClassName('openBtn');
+       this.closeBtns = document.getElementsByClassName('closeBtn');
+
+       for (let i = 0; i < this.openBtns.length; i++) {
+         const openBtn = this.openBtns[i];
+         const popupId = openBtn.getAttribute('data-popup-id');
+         openBtn.addEventListener('click', () => this.open(popupId));
+       }
+
+       for (let i = 0; i < this.closeBtns.length; i++) {
+         const closeBtn = this.closeBtns[i];
+         closeBtn.addEventListener('click', () => this.close());
+       }
+     }
+
+     open(popupId) {
+       const popup = document.getElementById(popupId);
+       popup.style.display = 'block';
+     }
+
+     close() {
+       for (let i = 0; i < this.popups.length; i++) {
+         const popup = this.popups[i];
+         popup.style.display = 'none';
+       }
+     }
+   }
+
+   const popup = new Popup();
+   </script>
+</body>
+</html>

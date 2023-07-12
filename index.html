@@ -8,6 +8,15 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 	<title>WinForce</title>
+
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+  <style>
+    .carousel .card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
                 
 </head>
 <body class="indexBody">
@@ -19,25 +28,29 @@
 			<div class="indexnav_contents">
 				<ul>
 					<li>
-						<a class="nav_link" href="index.html">Home</a>
+						<a class="nav_link nav_links active" href="index.html">Home</a>
 					</li>
 					<li>
-						<a class="nav_link" href="about.html">About</a>
+						<a class="nav_link nav_links" href="about.html">About</a>
 					</li>
 					<li>
-						<a class="nav_link" href="market.html">Marketplace</a>
+						<a class="nav_link nav_links" href="market.html">Marketplace</a>
 					</li>
 					<li>
-						<a class="nav_link" href="ticknearn.html">Tick & Earn</a>
+						<a class="nav_link nav_links" href="ticknearn.html">Tick & Earn</a>
+					</li>
+					<li class="dropdown">
+						<a class="nav_link nav_links dropdown-btn" href="coupon.html">Coupon Code &nbsp; v</a>
+						<div class="dropdown-content">
+							<a href="coupon.html">Buy Coupon Code</a>
+							<a href="verifycoupon.html">Verify Coupon Code</a>
+						</div>
 					</li>
 					<li>
-						<a class="nav_link" href="coupon.html">Coupon Code</a>
+						<a class="nav_link nav_links" href="leaderboard.html">Leaderboard</a>
 					</li>
 					<li>
-						<a class="nav_link" href="leaderboard.html">Leaderboard</a>
-					</li>
-					<li>
-						<a class="nav_link" href="support.html">Support</a>
+						<a class="nav_link nav_links" href="support.html">Support</a>
 					</li>
 				</ul>
 				<div class="indexnav_btns">
@@ -97,6 +110,7 @@
 			<div class="why_winforce_contents getStarted_contents">
 				<div class="why_img">
 					<img class="" src="./images/346952d872f106e34b0a3908a5c0a4f8.gif">
+					<img class="why_ellipse" src="./images/Ellipse 2842.svg">
 				</div>
 				<div class="why_winforce_flexContainer">
 					<article>
@@ -125,7 +139,7 @@
 		</section>
 		<section class="read_reviews">
 			<div class="read_reviewsDiv">
-				<div style="position: relative; margin-top: 20px;">
+				<div style="position: relative; margin-top: 30px; z-index: 9;">
 					<div class="ellipse-background">
 						<div class="why_winforce_header">
 							<h2>Read from our Users</h2>
@@ -134,7 +148,7 @@
 					</div>
 				</div>
 				<article class="carousel">
-					<div class="card">
+					<div class="card grabbable">
 						<img src="./images/Client Image.svg">
 						<div>
 							<h5>“I am grateful to WinForce”</h5>
@@ -142,7 +156,7 @@
 							<h5>Adam John</h5>
 						</div>
 					</div>
-					<div class="card">
+					<div class="card grabbable">
 						<img src="./images/Client Image (1).svg">
 						<div>
 							<h5>“WinForce is the way”</h5>
@@ -150,7 +164,7 @@
 							<h5>Janet Ojo</h5>
 						</div>
 					</div>
-					<div class="card">
+					<div class="card grabbable">
 						<img src="./images/Client Image (2).svg">
 						<div>
 							<h5>“WinForce is the way”</h5>
@@ -160,12 +174,11 @@
 					</div>
 				</article>
 				<div style="position: relative; margin-top: 20px;">
-					<div class="ellipse-background"></div>
-				</div>
-				<div class="carousel-bullets">
-					<span class="bullet active"></span>
-					<span class="bullet"></span>
-					<span class="bullet"></span>
+					<div class="ellipse-background">
+						<div class="carousel-bullets">
+							
+						</div>
+					</div>
 				</div>
 				<button>500+ <span>Reviews</span></button>
 			</div>
@@ -248,5 +261,38 @@
 	</footer>
 
 	<script type="text/javascript" src="./js/script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+  <script>
+    $(document).ready(function() {
+  var $carousel = $('.carousel');
+  var $bulletsContainer = $('.carousel-bullets');
+  
+  $carousel.on('init beforeChange', function(event, slick, currentSlide, nextSlide) {
+    updateBulletColor(nextSlide);
+  });
+
+  $carousel.slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    autoplay: false,
+    autoplaySpeed: 3000,
+    appendDots: $bulletsContainer,
+    customPaging: function(slider, i) {
+      return '<span class="bullet"></span>';
+    }
+  });
+
+  function updateBulletColor(nextSlide) {
+    $('.bullet').removeClass('active');
+    $('.bullet').eq(nextSlide).addClass('active');
+  }
+
+  // Set the first bullet as active initially
+  $bulletsContainer.find('.bullet').first().addClass('active');
+});
+
+  </script>
 </body>
 </html>
