@@ -566,7 +566,7 @@
     color: var(--color-offwhite);
   }
 
-  .footer article {
+  .footer_socials, .footer_download {
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -594,14 +594,14 @@
     font-weight: var(--font-weight-semibold);
   }
 
-  .footer article a {
+  .footer_socials a {
     padding: 13px;
     background-color: var(--color-white);
     border-radius: 50%;
     text-align: center;
   }
 
-  .footer article a:hover {
+  .footer_socials a:hover {
     background-color: var(--color-offwhite);
     opacity: 0.7;
   }
@@ -1553,7 +1553,7 @@ color: var(--color-black);
 }
 
   
-@media (max-width: 750px) {
+@media only screen and (max-width: 750px) {
   .hamburger{
     display: block;
   }
@@ -1721,168 +1721,79 @@ color: var(--color-black);
     height: 10px;
   }
 
-  .read_reviews button {
-    border-radius: 8px;
-    font-size: 24px;
-    margin-top: 40px;
-    max-width: 180px;
-  }
-
-  .read_reviewsDiv {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .read_reviews button span {
-    font-size: 24px;
-  }
-
   .Start_journey {
     background: url('../images/Ellipse\ 2841 (1).svg') left -10% no-repeat;
   }
 
   .Start_journey section {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 60px 100px;
-    padding-top: 130px;
-    gap: 40px;
-    max-width: 1483px;
-  }
-
-  .Start_journey_content {
-    max-width: 667px;
-    align-self: center;
-    justify-self: center;
-  }
-
-  .Start_journey_content button {
-    background-color: var(--color-primary);
-    border-radius: 16px;
-    padding: 10px 20px;
-    color: var(--color-white);
-    font-size: 18px;
-    border: none;
-  }
-
-  .Start_journey_content button:hover {
-    opacity: 0.8;
-  }
-
-  .Start_journey h5 {
-    font-size: 32px;
-    font-weight: var(--font-weight-bold);
-    color: var(--color-black);
-  }
-
-  .Start_journey p {
-    font-size: 24px;
-    font-weight: 500;
-    color: var(--color-grey-dark);
-    margin: 10px 0px 40px;
-  }
-
-  .Start_journey_media {
-    display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     max-width: 600px;
   }
 
-  .Start_journey_media img {
-    max-width: 230px;
+  .Start_journey_content {
+    text-align: center;
+  }
+
+  .Start_journey h5 {
+    font-size: 24px;
+  }
+
+  .Start_journey p {
+    font-size: 16px;
+  }
+
+  .Start_journey_media {
+    max-width: 400px;
   }
 
   .footer_copyright {
-    color: var(--color-primary);
-    text-align: center;
-    padding: 20px;
-    font-size: 20px;
-    font-weight: 500;
+    padding: 14px;
+    font-size: 16px;
   }
 
   .footer {
-    background-color: var(--color-primary);
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    align-items: center;
-    padding: 60px;
-    margin-top: 10px;
-  }
-
-  .footer_logo {
-    padding: 3% 1%;
-    background-color: var(--color-white);
-    border-radius: 50%;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .footer section {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+    flex-direction: column;
   }
 
   .footer_nav {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    max-width: 150px;
+    max-width: 200px;
   }
 
   .footer h6 {
-    font-size: 20px;
-    font-weight: var(--font-weight-bold);
-    color: var(--color-white);
-    padding-bottom: 10px;
-    white-space: nowrap;
+    padding-bottom: 5px;
+    padding-top: 20px;
   }
 
-  .footer_nav a {
-    font-size: 16px;
-    font-weight: 500;
-    color: var(--color-offwhite);
-  }
-
-  .footer article {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+  .footer_download {
+    flex-direction: column;
   }
 
   .footerdownload_btn {
-    padding: 9px 15px;
-    background-color: var(--color-backgrond_black);
-    border-radius: 7px;
-    box-shadow: 0px 4px 24px 0px rgba(255, 255, 255, 0.25);
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-    color: var(--text-color);
+    padding: 9px 8px;
+    max-width: 200px;
   }
 
   .footerdownload_btn p {
-    font-size: 17px;
-    font-weight: var(--font-weight-semibold);
+    font-size: 14px;
   }
 
   .footerdownload_btn span {
-    font-size: 21px;
-    font-weight: var(--font-weight-semibold);
+    font-size: 18px;
   }
 
-  .footer article a {
-    padding: 13px;
-    background-color: var(--color-white);
-    border-radius: 50%;
-    text-align: center;
+  .footer_socials a {
+    padding: 8px 8px 3px;
   }
 
-  .footer article a:hover {
-    background-color: var(--color-offwhite);
-    opacity: 0.7;
+  .footer_socials img {
+    width: 20px;
+    height: 20px;
   }
-
 }
