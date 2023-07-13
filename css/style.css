@@ -1796,6 +1796,16 @@ color: var(--color-black);
     width: 20px;
     height: 20px;
   }
+
+  .dropdown-content {
+    min-width:1500px;
+    padding: 10px;
+  }
+  
+  .dropdown-content a {
+    padding: 4px;
+    font-size: 14px;
+  }
 }
 
 @media only screen and (max-width: 577px) {
