@@ -479,7 +479,7 @@
     justify-self: center;
   }
 
-  .Start_journey_content button {
+  .Start_journey_content a {
     background-color: var(--color-primary);
     border-radius: 16px;
     padding: 10px 20px;
@@ -488,7 +488,7 @@
     border: none;
   }
 
-  .Start_journey_content button:hover {
+  .Start_journey_content a:hover {
     opacity: 0.8;
   }
 

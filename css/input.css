@@ -1,0 +1,22 @@
+/* input.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+/* Your custom styles here */
+
+.orange {
+    color: #FE4C02;
+}
+
+.bg-orange {
+    background-color: #FE4C02;
+}
+
+.black {
+    color: #1A1A1A;
+}
+
+.form-container {
+    min-height: 80vh; /* Set a minimum height to ensure the form is always visible */
+    margin-bottom: 20px;
+  }

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/svg" sizes="32x32" href="./images/logo.svg">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/output.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+
+	<title>WinForce</title>
+                
+</head>
+<body class="bg-white font-poppins">
+  <div class="flex flex-col items-center justify-center">
+    <div class="w-full max-w-xl p-6 bg-white form-container mb-12">
+    <div class="text-center mb-8 mt-8">
+      <img src="./images/logoImg.png" alt="Logo" class="w-32 h-32 mx-auto">
+      <h2 class="text-lg font-bold mt-2 orange md:text-2xl lg:text-4xl">Hey, Welcome Back!</h2>
+    </div>
+    <form>
+      <!-- Form inputs for username, email, phone number, and password -->
+      <div class="mb-4 border-t-2 shadow-xl rounded-lg p-4">
+      <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-1" for="username">Username</label>
+        <input type="text" id="username" required class="w-full px-3 py-2 border rounded-lg border-gray-300 placeholder-gray-400 focus:outline-none focus:border-orange-500" placeholder="e.g. buildmychoice" autocomplete="username">
+      </div>
+      <div class="mb-4 relative">
+        <label class="block text-gray-700 text-sm font-bold mb-1" for="password">Password</label>
+        <input type="password" id="password" required class="w-full px-3 py-2 border rounded-lg border-gray-300 placeholder-gray-400 focus:outline-none focus:border-orange-500 pr-10" placeholder="*****" autocomplete="new-password">
+        <button id="togglePassword" class="absolute top-1/2 transform -translate-y-1/2 right-2 focus:outline-none">
+            <svg id="eyeClosed" xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
+                <path d="M2.07688 1.63965L5.23641 4.79919M17.9223 17.4851L14.7631 14.3258M11.65 15.5701C11.1155 15.6714 10.564 15.7245 9.99999 15.7245C6.0583 15.7245 2.7217 13.1338 1.59998 9.56232C1.90535 8.59006 2.37486 7.69049 2.97605 6.89608M8.13218 7.69495C8.61009 7.21704 9.27031 6.92145 9.99958 6.92145C11.4581 6.92145 12.6405 8.10382 12.6405 9.56235C12.6405 10.2916 12.3449 10.9518 11.867 11.4298M8.13218 7.69495L11.867 11.4298M8.13218 7.69495L5.23641 4.79919M11.867 11.4298L5.23641 4.79919M11.867 11.4298L14.7631 14.3258M5.23641 4.79919C6.60953 3.91394 8.24476 3.40025 9.99997 3.40025C13.9416 3.40025 17.2782 5.9909 18.4 9.56238C17.7777 11.5437 16.4738 13.2231 14.7631 14.3258" stroke="#808080" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" id="eyeOpen" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display: none">
+            <path d="M12.0001 13.7606C12.9725 13.7606 13.7607 12.9723 13.7607 12C13.7607 11.0276 12.9725 10.2394 12.0001 10.2394C11.0278 10.2394 10.2395 11.0276 10.2395 12C10.2395 12.9723 11.0278 13.7606 12.0001 13.7606Z" fill="#808080"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.6001 12C4.72182 8.42854 8.05843 5.83789 12.0001 5.83789C15.9418 5.83789 19.2784 8.42851 20.4001 12C19.2784 15.5715 15.9418 18.1621 12.0001 18.1621C8.05843 18.1621 4.72184 15.5715 3.6001 12ZM15.5213 12C15.5213 13.9447 13.9448 15.5212 12.0001 15.5212C10.0554 15.5212 8.47894 13.9447 8.47894 12C8.47894 10.0553 10.0554 8.47879 12.0001 8.47879C13.9448 8.47879 15.5213 10.0553 15.5213 12Z" fill="#808080"/>
+          </svg>
+        </button>
+        <div class="flex justify-end">
+          <a href="#" class="text-orange-500 text-sm font-medium mt-1">Forgot Password?</a>
+        </div>
+      </div>
+    </div>
+
+      <button class="bg-orange text-white py-2 px-4 rounded-2xl w-full font-semibold mt-4 md:py-4 md:px-6 lg:py-4 lg:px-6">Login</button>
+      <p class="text-center mt-4 text-base text-gray-600 mb-8 font-medium md:text-lg lg:text-lg">Don't have an account? <a href="register.html" class="orange font-semibold">Create Account</a></p>
+    </form>
+    </div>
+  </div>
+
+  
+<script>
+    const passwordInput = document.getElementById('password');
+const togglePassword = document.getElementById('togglePassword');
+const eyeOpen = document.getElementById('eyeOpen');
+const eyeClosed = document.getElementById('eyeClosed');
+
+togglePassword.addEventListener('click', () => {
+    if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        eyeOpen.style.display = 'none';
+        eyeClosed.style.display = 'block';
+    } else {
+        passwordInput.type = 'password';
+        eyeOpen.style.display = 'block';
+        eyeClosed.style.display = 'none';
+    }
+});
+
+  </script>
+</body>
+</html>
