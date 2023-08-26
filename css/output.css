@@ -553,3 +553,23 @@ video {
   /* Set a minimum height to ensure the form is always visible */
   margin-bottom: 20px;
 }
+
+.dashboard-background {
+  background-color: #FFF4F0;
+}
+
+.atm-one {
+  background: linear-gradient(152deg, #FE4C02 0%, #FC7B45 100%);
+}
+
+.atm-two {
+  background: linear-gradient(152deg, #25142E 0%, #7D6643 100%);
+}
+
+.atm-three {
+  background: linear-gradient(152deg, #9A2018 0%, #C66F5C 100%);
+}
+
+.shadowed {
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.04);
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/svg" sizes="32x32" href="../images/logo.svg">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/output.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+
+	<title>WinForce</title>
+                
+</head>
+<body class="font-poppins">
+    <div class="flex h-screen">
+      <!-- Aside section for logo and menu icons -->
+      <aside class="bg-white min-w-[4rem] max-w-[16.75rem] p-4 border-r border-gray-300 transition-all duration-300">
+        <!-- Logo and menu icons -->
+        <div class="mb-6">
+          <img src="../images/logo.svg" alt="Logo" class="w-40 h-40 mr-8">
+
+          <!-- Menu items -->
+          <nav class="flex flex-col space-y-4">
+            <a href="#" class="text-gray-700 hover:text-orange-500">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M15.7333 7.33343C15.7333 9.39529 14.0619 11.0668 12 11.0668C9.93815 11.0668 8.26667 9.39529 8.26667 7.33343C8.26667 5.27157 9.93815 3.6001 12 3.6001C14.0619 3.6001 15.7333 5.27157 15.7333 7.33343Z" stroke="#1A1A1A" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 13.8668C8.39175 13.8668 5.46667 16.7918 5.46667 20.4001H18.5333C18.5333 16.7918 15.6083 13.8668 12 13.8668Z" stroke="#1A1A1A" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Dashboard
+            </a>
+            <!-- Add more menu items here -->
+          </nav>
+        </div>
+        <!-- Hide/Unhide button and all menu icons -->
+        <div class="mb-6">
+          <button id="toggleAside" class="focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M26.6954 25.8339C26.0225 26.5068 24.9315 26.5068 24.2586 25.8339L15.6432 17.2185C14.9703 16.5456 14.9703 15.4546 15.6432 14.7817L24.2586 6.1663C24.9315 5.4934 26.0225 5.4934 26.6954 6.1663C27.3683 6.8392 27.3683 7.9302 26.6954 8.6031L19.2984 16.0001L26.6954 23.3971C27.3683 24.07 27.3683 25.161 26.6954 25.8339ZM16.3569 25.8339C15.684 26.5068 14.593 26.5068 13.9201 25.8339L5.30473 17.2185C4.63182 16.5456 4.63182 15.4546 5.30473 14.7817L13.9201 6.1663C14.593 5.49339 15.684 5.4934 16.3569 6.1663C17.0298 6.8392 17.0298 7.93019 16.3569 8.6031L8.95992 16.0001L16.3569 23.3971C17.0298 24.07 17.0298 25.161 16.3569 25.8339Z" fill="#1A1A1A"/>
+</svg>
+          </button>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M15.7333 7.33343C15.7333 9.39529 14.0619 11.0668 12 11.0668C9.93815 11.0668 8.26667 9.39529 8.26667 7.33343C8.26667 5.27157 9.93815 3.6001 12 3.6001C14.0619 3.6001 15.7333 5.27157 15.7333 7.33343Z" stroke="#1A1A1A" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 13.8668C8.39175 13.8668 5.46667 16.7918 5.46667 20.4001H18.5333C18.5333 16.7918 15.6083 13.8668 12 13.8668Z" stroke="#1A1A1A" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <!-- All menu icons -->
+          <!-- Add menu icons here -->
+        </div>
+      </aside>
+  
+      <!-- Main section -->
+      <main class="flex-grow dashboard-background">
+        <!-- Header -->
+        <header class="bg-white p-4 flex justify-between items-center">
+          <h1 class="text-lg font-semibold">Dashboard</h1>
+          <div class="flex items-center space-x-3">
+            <button class="focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M14.8 16.6668H19.4667L18.1554 15.3555C17.7998 14.9999 17.6 14.5176 17.6 14.0147V11.0668C17.6 8.62849 16.0417 6.55418 13.8667 5.78542V5.46676C13.8667 4.43583 13.0309 3.6001 12 3.6001C10.9691 3.6001 10.1333 4.43583 10.1333 5.46676V5.78542C7.9583 6.55418 6.39999 8.62849 6.39999 11.0668V14.0147C6.39999 14.5176 6.20021 14.9999 5.8446 15.3555L4.53333 16.6668H9.19999M14.8 16.6668V17.6001C14.8 19.1465 13.5464 20.4001 12 20.4001C10.4536 20.4001 9.19999 19.1465 9.19999 17.6001V16.6668M14.8 16.6668H9.19999" stroke="#1A1A1A" stroke-width="2.20595" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+            </button>
+            <img src="../images/Ellipse 2840.svg" alt="Profile" class="w-10 h-10 rounded-full">
+            <span class="text-gray-700 font-bold">Buildmychoice</span>
+          </div>
+        </header>
+        <h3 class="text-2xl font-bold p-4">Good morning, Buildmychoice!</h3>
+        <section>
+            <div class="p-4">
+                <img class="rounded-3xl atm-one" src="../images/ATM Card.png" >
+            </div>
+            <div class="p-4">
+                <img class="rounded-3xl atm-two" src="../images/ATM Card.png" >
+            </div>
+            <div class="p-4">
+                <img class="rounded-3xl atm-three" src="../images/ATM Card.png" >
+            </div>
+        </section>
+  
+      </main>
+    </div>
+  
+    <script>
+        // JavaScript code for toggling the aside section
+        const toggleAsideButton = document.getElementById('toggleAside');
+        const aside = document.getElementById('aside');
+        const logoMenuDiv = document.getElementById('logoMenuDiv');
+        const hideUnhideDiv = document.getElementById('hideUnhideDiv');
+    
+        toggleAsideButton.addEventListener('click', () => {
+          logoMenuDiv.classList.toggle('hidden');
+          hideUnhideDiv.classList.toggle('hidden');
+        });
+      </script>
+  </body>
+  </html>
